@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+{% if control %}
+    <ul>
+
+        {% for c in content %}
+            <li>{{c}}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    Ви позбавлені права доступу до секретної інформації
+{% endif %}
+</body>
+</html>
